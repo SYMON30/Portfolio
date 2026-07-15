@@ -1,15 +1,60 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+a {
+  color: var(--accent);
+  text-decoration: none;
 }
 
-html {
-  scroll-behavior: smooth;
+a:hover {
+  text-decoration: underline;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #0f172a;
-  color: white;
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
 }
+
+header.hero {
+  padding: 96px 0 64px;
+  border-bottom: 1px solid var(--border);
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+}
+
+.lede {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 60ch;
+  margin: 0 0 28px;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.pill {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid rgba(79, 209, 197, 0.25);
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* ...and all the remaining CSS... */
